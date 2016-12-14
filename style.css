@@ -1,0 +1,128 @@
+*{
+	font-family: 'Raleway', serif;
+}
+
+#icon>p{
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition:	transform .8s ease-in-out;
+}
+
+#icon>p:hover{
+	cursor:pointer;
+	-webkit-transform:rotate(360deg);
+	transform: rotate(360deg);
+}
+
+body, html{
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+	overflow: hidden;
+}
+#circle{
+	height:100%;
+	width:100%;
+	display: block;
+	border-radius: 100%;
+	background-color:white;
+	border: 1px solid #45b04c;
+	z-index: 502;
+	position: relative;
+}
+#icon{
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	z-index:1000;
+	position:absolute;
+}
+.container{
+	transform: translateY(-35%);
+	height: auto;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 1px dashed blue;*/
+	text-align: center;
+}
+.left{
+	float:left;
+	position:relative;
+	height:100%;
+	width:50%;
+	background-color: rgba(69, 176, 76,0.8);
+	z-index: 500;
+}
+.right{
+	float:right;
+	position: relative;
+	height:100%;
+	width:50%;
+	background-color: white;
+}
+.center{
+	height:250px;
+	width:250px;
+	position:relative;
+	display:block;
+	z-index: 501;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);;
+}
+input[type="password"], input[type="email"]{
+	width:100%;
+	height:30px;
+	border:1px solid #45b04c;
+	padding:5px;
+}
+input[type='submit']{
+	padding:5px 15px; 
+    background:#45b04c;
+    width: 332px;
+    height: 40px; 
+    border:0 none;
+    cursor:pointer;
+}
+input[type='submit']:hover{
+	background-color: #28662c;
+	color:white;
+}
+input[type='submit']:active{
+	background-color: #66ba6b;
+	color:white;
+}
+input[type="email"]:focus, input[type="password"]:focus{
+	border: 1px solid black;
+}
+
+textarea:focus, input:focus{
+	outline:none;
+}
+
+a{
+	font-size: 12px;
+	text-decoration: none;
+	color: #45b04c;
+}
+
+a:hover{
+	color:red;
+}
+.slideshow { 
+	height: 100%; 
+	width: 50%; 
+	margin: auto; 
+	position: absolute; 
+}
+.forgot_dark{
+	background-color: rgba(0,0,0,0.1);
+	z-index: 1001;
+	display:block;
+	height: 100%;
+	width: 100%;
+}
+#forgotpassbtn:hover{
+	cursor: pointer;
+}
